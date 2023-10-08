@@ -73,6 +73,8 @@ impl_parse! {
                 input.parse::<Token![=]>()?;
                 parse_assign_str(input)?;
             }
+
+            out.0.optional = true;
         },
     }
 }
